@@ -5,22 +5,39 @@ nav {
   background-color: var(--bgcolor);
 }
 
-#index-tab {
-  padding: 0 0.5rem;
-  border-bottom: 0.1rem solid transparent;
-}
-
 .nav__tab {
-  border-bottom: var(--border);
+  border: var(--border);
+  border-top-left-radius: var(--border-radius);
+  border-top-right-radius: var(--border-radius);
   background-color: rgb(226, 226, 226);
   cursor: pointer;
   transition: 0.1s ease-in-out;
   min-width: 13rem;
   height: 5rem;
+  padding: 1.4rem 0.7rem;
+}
+
+.nav__tab:hover {
+  background-color: var(--bgcolor);
+}
+
+#index-tab {
+  background-color: var(--bgcolor);
+  padding: 0 0.5rem;
+  border-bottom: 0.1rem solid transparent;
+  cursor: pointer;
+  transition: 0.1s ease-in-out;
+}
+
+#form-tab,
+#function-tab {
+  position: relative;
+  margin-left: -1rem;
 }
 
 a {
   text-decoration: none;
+  color: black;
 }
 
 .logo {
@@ -42,4 +59,30 @@ a {
 .logo::selection {
   color: white;
   background-color: rgb(40, 42, 53);
+}
+
+nav h1 {
+  font-family: var(--header_font);
+  font-size: 1.4rem;
+  margin-top: 0.2rem;
+}
+
+nav h1::selection {
+  background-color: lightgray;
+}
+
+#headline-form {
+  font-weight: 300;
+}
+
+#headline-form::after {
+  content: ":";
+}
+
+#headline-form:hover {
+  font-weight: 400;
+}
+
+#headline-form:focus {
+  font-weight: 400;
 }
