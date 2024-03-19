@@ -9,12 +9,14 @@ import Hero from "./Hero.jsx"
 function Router() {
   return (
     <BrowserRouter>
-      <Hero />
-      <Navbar />
+      <header>
+        <Hero />
+        <Navbar />
+      </header>
       <Routes>
         <Route path="/" element={<Startpage />} />
         <Route path="form" element={<Form />} />
-        <Route path="functionality" element={<Function />} />
+        <Route path="function" element={<Function />} />
         <Route path="content" element={<Content />} />
       </Routes>
     </BrowserRouter>
