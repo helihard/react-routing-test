@@ -1,5 +1,10 @@
 function Functionality() {
-  return <h1>funktion</h1>
+  return (
+    <>
+      <h1>function</h1>
+      <div>this is a page about the Why</div>
+    </>
+  )
 }
 
 export default Functionality
