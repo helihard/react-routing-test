@@ -1,12 +1,8 @@
-//import "./App.css"
+import "./css/styles.css"
 import Router from "./components/Router.jsx"
 
 function App() {
-  return (
-    <>
-      <Router />
-    </>
-  )
+  return <Router />
 }
 
 export default App

@@ -1,0 +1,28 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --padding: 1.5rem;
+  --border: 0.1rem solid lightgray;
+  --border-radius: 0.6rem;
+  --body_font: "Lato", sans-serif;
+  /*--body_font: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;*/
+  --bgcolor: whitesmoke;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--bgcolor);
+}
+
+#root {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 0.75rem 0.75rem;
+  max-width: 85vw;
+  background-color: var(--bgcolor);
+  font-family: var(--body_font);
+}

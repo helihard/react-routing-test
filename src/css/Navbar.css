@@ -1,0 +1,20 @@
+nav {
+  display: flex;
+  justify-content: flex-start;
+  font-family: var(--body_font);
+  background-color: var(--bgcolor);
+}
+
+#index-tab {
+  padding: 0 0.5rem;
+  border-bottom: 0.1rem solid transparent;
+}
+
+.nav__tab {
+  border-bottom: var(--border);
+  background-color: rgb(226, 226, 226);
+  cursor: pointer;
+  transition: 0.1s ease-in-out;
+  min-width: 13rem;
+  height: 5rem;
+}
