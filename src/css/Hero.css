@@ -1,0 +1,36 @@
+#xxs-hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: var(--padding);
+  height: 3rem;
+  font-family: var(--body_font);
+  background-color: var(--bgcolor);
+}
+
+@keyframes tagline-glitch {
+  0% {
+    text-shadow: none;
+  }
+  25% {
+    text-shadow: -2px -2px 0 cyan;
+  }
+  50% {
+    text-shadow: 2px 2px 0 magenta;
+  }
+  75% {
+    text-shadow: -2px -2px 0 cyan, 2px 2px 0 magenta;
+  }
+  100% {
+    text-shadow: none;
+  }
+}
+
+#tagline {
+  font-size: 1.2rem;
+  animation: tagline-glitch 0.5s linear 0.5s 2;
+}
+
+#tagline::selection {
+  background-color: lightgray;
+}
