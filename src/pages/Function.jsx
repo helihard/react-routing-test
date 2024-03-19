@@ -1,4 +1,4 @@
-function Functionality() {
+function Function() {
   return (
     <>
       <h1>function</h1>
@@ -7,4 +7,4 @@ function Functionality() {
   )
 }
 
-export default Functionality
+export default Function
