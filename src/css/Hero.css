@@ -27,7 +27,8 @@
 }
 
 #tagline {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
+  font-weight: 400;
   animation: tagline-glitch 0.5s linear 0.5s 2;
 }
 
