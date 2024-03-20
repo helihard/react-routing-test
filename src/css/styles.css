@@ -11,8 +11,7 @@
   --bgcolor: whitesmoke;
 }
 
-html,
-body {
+html {
   margin: 0;
   padding: 0;
   background-color: var(--bgcolor);
@@ -25,4 +24,18 @@ body {
   max-width: 85vw;
   background-color: var(--bgcolor);
   font-family: var(--header_font);
+}
+
+h1::selection,
+div::selection {
+  background-color: lightgray;
+}
+
+em {
+  font-weight: 100;
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: 400;
 }
