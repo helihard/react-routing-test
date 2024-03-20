@@ -4,28 +4,40 @@ import "../css/Navbar.css"
 function Navbar() {
   return (
     <nav>
-      <NavLink exact to="/">
+      <NavLink to="/">
         <span className="logo" id="index-tab">
           glitch.
         </span>
       </NavLink>
       &nbsp;
-      <NavLink to="/content">
-        <h1 className="nav__tab" id="content-tab">
-          content
-        </h1>
+      <NavLink
+        to="/content"
+        className={({ isActive }) =>
+          isActive ? "nav__tab selected" : "nav__tab content-tab unselected"
+        }
+        id="content-tab"
+      >
+        content
       </NavLink>
       &nbsp;
-      <NavLink to="/form">
-        <h1 className="nav__tab" id="form-tab">
-          form
-        </h1>
+      <NavLink
+        to="/form"
+        className={({ isActive }) =>
+          isActive ? "nav__tab selected" : "nav__tab form-tab unselected"
+        }
+        id="form-tab"
+      >
+        form
       </NavLink>
       &nbsp;
-      <NavLink to="/function">
-        <h1 className="nav__tab" id="function-tab">
-          function
-        </h1>
+      <NavLink
+        to="/function"
+        className={({ isActive }) =>
+          isActive ? "nav__tab selected" : "nav__tab function-tab unselected"
+        }
+        id="function-tab"
+      >
+        function
       </NavLink>
     </nav>
   )
