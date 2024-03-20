@@ -1,33 +1,63 @@
+/* general nav and tab styles */
+
 nav {
   display: flex;
   justify-content: flex-start;
   font-family: var(--header_font);
   background-color: var(--bgcolor);
+  margin-bottom: 2rem;
+}
+
+nav::selection {
+  background-color: var(--bgcolor);
+}
+
+.nav__tab::selection {
+  background-color: lightgray;
 }
 
 .nav__tab {
-  border: var(--border);
+  border-left: var(--border);
+  border-top: var(--border);
+  border-right: var(--border);
   border-top-left-radius: var(--border-radius);
   border-top-right-radius: var(--border-radius);
-  background-color: rgb(226, 226, 226);
   cursor: pointer;
   transition: 0.1s ease-in-out;
   min-width: 13rem;
   height: 5rem;
-  padding: 1.4rem 0.7rem;
+  padding: 1.6rem 0.7rem 1.4rem;
+  font-size: 1.4rem;
 }
 
 .nav__tab:hover {
   background-color: var(--bgcolor);
+  font-weight: 400;
 }
 
-#index-tab {
-  background-color: var(--bgcolor);
-  padding: 0 0.5rem;
+/* selected/unselected states */
+
+.selected {
   border-bottom: 0.1rem solid transparent;
-  cursor: pointer;
-  transition: 0.1s ease-in-out;
+  background-color: var(--bgcolor);
+  font-weight: 400;
 }
+
+.selected::after {
+  content: ".";
+}
+
+.unselected {
+  border-bottom: var(--border);
+  background-color: rgb(226, 226, 226);
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+/* specific tab styles */
 
 #form-tab,
 #function-tab {
@@ -35,9 +65,34 @@ nav {
   margin-left: -1rem;
 }
 
-a {
-  text-decoration: none;
-  color: black;
+#content-tab {
+  font-style: italic;
+}
+
+.content-tab,
+.form-tab {
+  font-weight: 300;
+}
+
+.function-tab {
+  font-weight: 100;
+}
+
+.content-tab::after,
+.form-tab::after,
+.function-tab::after {
+  content: ":";
+}
+
+/* logo tab and text */
+
+#index-tab {
+  background-color: var(--bgcolor);
+  padding: 0 0.5rem;
+  margin-right: 0.3rem;
+  border-bottom: 0.1rem solid transparent;
+  cursor: pointer;
+  transition: 0.1s ease-in-out;
 }
 
 .logo {
@@ -59,30 +114,4 @@ a {
 .logo::selection {
   color: white;
   background-color: rgb(40, 42, 53);
-}
-
-nav h1 {
-  font-family: var(--header_font);
-  font-size: 1.4rem;
-  margin-top: 0.2rem;
-}
-
-nav h1::selection {
-  background-color: lightgray;
-}
-
-#headline-form {
-  font-weight: 300;
-}
-
-#headline-form::after {
-  content: ":";
-}
-
-#headline-form:hover {
-  font-weight: 400;
-}
-
-#headline-form:focus {
-  font-weight: 400;
 }
