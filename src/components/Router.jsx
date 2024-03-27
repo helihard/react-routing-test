@@ -15,9 +15,9 @@ function Router() {
       </header>
       <Routes>
         <Route path="/react-routing-test" element={<Startpage />} />
-        <Route path="form" element={<Form />} />
-        <Route path="function" element={<Function />} />
-        <Route path="content" element={<Content />} />
+        <Route path="/react-routing-test/form" element={<Form />} />
+        <Route path="/react-routing-test/function" element={<Function />} />
+        <Route path="/react-routing-test/content" element={<Content />} />
       </Routes>
     </BrowserRouter>
   );

@@ -11,7 +11,7 @@ function Navbar() {
       </NavLink>
       &nbsp;
       <NavLink
-        to="/content"
+        to="/react-routing-test/content"
         className={({ isActive }) =>
           isActive ? "nav__tab selected" : "nav__tab content-tab unselected"
         }
@@ -21,7 +21,7 @@ function Navbar() {
       </NavLink>
       &nbsp;
       <NavLink
-        to="/form"
+        to="/react-routing-test/form"
         className={({ isActive }) =>
           isActive ? "nav__tab selected" : "nav__tab form-tab unselected"
         }
@@ -31,7 +31,7 @@ function Navbar() {
       </NavLink>
       &nbsp;
       <NavLink
-        to="/function"
+        to="/react-routing-test/function"
         className={({ isActive }) =>
           isActive ? "nav__tab selected" : "nav__tab function-tab unselected"
         }
