@@ -1,10 +1,10 @@
-import { NavLink } from "react-router-dom"
-import "../css/Navbar.css"
+import { NavLink } from "react-router-dom";
+import "../css/Navbar.css";
 
 function Navbar() {
   return (
     <nav>
-      <NavLink to="/">
+      <NavLink to="/react-routing-test">
         <span className="logo" id="index-tab">
           glitch.
         </span>
@@ -40,7 +40,7 @@ function Navbar() {
         function
       </NavLink>
     </nav>
-  )
+  );
 }
 
-export default Navbar
+export default Navbar;
